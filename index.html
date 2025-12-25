@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Slider</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id="carousel">
+
+      <button id="pause-btn">
+        <i class="fas fa-pause"></i>
+      </button>
+
+      <div id="slides-container">
+
+        <div class="slide active">
+          <div class="slide-content">
+            <h2>Інновації майбутнього</h2>
+            <p class="subtitle">Технології</p>
+            <p class="description">
+              Відкрийте нові можливості сучасних рішень
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2>Творчість без меж</h2>
+            <p class="subtitle">Дизайн</p>
+            <p class="description">
+              Креативні ідеї та сучасні інструменти
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2>Океан можливостей</h2>
+            <p class="subtitle">Розробка</p>
+            <p class="description">
+              Frontend нового покоління
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="indicators-container">
+        <div class="indicator active" data-slide-to="0"></div>
+        <div class="indicator" data-slide-to="1"></div>
+        <div class="indicator" data-slide-to="2"></div>
+      </div>
+
+      <div id="controls-container">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+
+    <script src="carousel.js"></script>
+  </body>
+
+</html>
